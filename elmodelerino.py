@@ -1,9 +1,12 @@
 #fastscore.slot.0: in-use
 #fastscore.slot.1: in-use
 
+import time
+
 #modelop.score
 def action(datum):
     print(datum, flush=True)
+    time.sleep(1)
     i = datum['i']
     out = {
             'integer' : 123 * i,
