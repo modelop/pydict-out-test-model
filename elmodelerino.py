@@ -1,16 +1,16 @@
-#fastscore.slot.0: in-use
-#fastscore.slot.1: in-use
+# modelop.slot.0: in-use
+# modelop.slot.1: in-use
 
-#modelop.score
+# modelop.score
 def action(datum):
     print(datum, flush=True)
     i = datum['i']
     out = {
-            'integer' : 123 * i,
-            'float' : 123.456 + i,
-            'boolean': i % 2 == 0,
-            'string': 'thequickbrownfoxjumpedoverthelazydog'[0:i]
-            }
+        'integer' : 123 * i,
+        'float' : 123.456 + i,
+        'boolean': i % 2 == 0,
+        'string': 'thequickbrownfoxjumpedoverthelazydog'[0:i]
+    }
     yield out
 
 #x = action({'i': 5})
