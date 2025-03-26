@@ -4,7 +4,7 @@
 # modelop.score
 def action(datum):
     print(datum, flush=True)
-    i = datum['i']
+    i = datum['I']
     out = {
         'integer' : 123 * i,
         'float' : 123.456 + i,
